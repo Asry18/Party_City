@@ -108,7 +108,7 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Party City. All rights reserved. Made with <Heart className="inline h-4 w-4 fill-primary text-primary" /> for lovers.</p>
+          <p>&copy; {currentYear} Party City. All rights reserved. Made with for lovers.</p>
         </div>
       </div>
     </footer>
