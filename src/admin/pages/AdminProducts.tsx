@@ -54,7 +54,7 @@ export default function AdminProducts() {
                   <TableCell>
                     <Badge variant="outline">{product.category}</Badge>
                   </TableCell>
-                  <TableCell>${product.price}</TableCell>
+                  <TableCell>LKR {product.price}</TableCell>
                   <TableCell>
                     <Badge variant={product.stock < 20 ? "destructive" : "default"}>
                       {product.stock}
