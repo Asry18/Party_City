@@ -58,7 +58,7 @@ export default function AdminOrders() {
                 <TableRow key={order.id}>
                   <TableCell className="font-medium">{order.id}</TableCell>
                   <TableCell>{order.customerName}</TableCell>
-                  <TableCell>${order.amount.toFixed(2)}</TableCell>
+                  <TableCell>LKR {order.amount.toFixed(2)}</TableCell>
                   <TableCell>
                     <Badge variant={getStatusVariant(order.status)}>
                       {order.status}

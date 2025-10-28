@@ -54,7 +54,7 @@ export default function AdminAnalytics() {
                 stroke="hsl(var(--primary))" 
                 fillOpacity={1} 
                 fill="url(#colorRevenue)" 
-                name="Revenue ($)"
+                name="Revenue (LKR)"
               />
               <Area 
                 type="monotone" 
@@ -62,7 +62,7 @@ export default function AdminAnalytics() {
                 stroke="#10b981" 
                 fillOpacity={1} 
                 fill="url(#colorProfit)"
-                name="Profit ($)"
+                name="Profit (LKR)"
               />
             </AreaChart>
           </ResponsiveContainer>
@@ -89,7 +89,7 @@ export default function AdminAnalytics() {
                   }} 
                 />
                 <Legend />
-                <Bar dataKey="sales" fill="hsl(var(--primary))" name="Sales ($)" radius={[8, 8, 0, 0]} />
+                <Bar dataKey="sales" fill="hsl(var(--primary))" name="Sales (LKR)" radius={[8, 8, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
@@ -120,7 +120,7 @@ export default function AdminAnalytics() {
                   stroke="#f43f5e" 
                   strokeWidth={3}
                   dot={{ fill: '#f43f5e', r: 5 }}
-                  name="Sales ($)"
+                  name="Sales (LKR)"
                 />
               </LineChart>
             </ResponsiveContainer>
@@ -134,7 +134,7 @@ export default function AdminAnalytics() {
           <CardContent className="pt-6">
             <div className="text-center">
               <p className="text-sm text-muted-foreground">Avg Order Value</p>
-              <p className="text-3xl font-bold font-heading text-primary mt-2">$133.56</p>
+              <p className="text-3xl font-bold font-heading text-primary mt-2">LKR 133.56</p>
               <p className="text-xs text-green-600 mt-1">+5.2%</p>
             </div>
           </CardContent>

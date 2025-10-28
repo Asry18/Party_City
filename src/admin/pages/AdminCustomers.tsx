@@ -13,7 +13,7 @@ export default function AdminCustomers() {
   const handleViewCustomer = (customerName: string) => {
     toast({
       title: "View Customer Details",
-      description: `Viewing details for ${customerName} - Feature coming soon!`,
+      description: `Viewing details for LKR{customerName} - Feature coming soon!`,
     });
   };
 
@@ -46,7 +46,7 @@ export default function AdminCustomers() {
                   <TableCell>{customer.email}</TableCell>
                   <TableCell>{customer.totalOrders}</TableCell>
                   <TableCell className="font-semibold text-primary">
-                    ${customer.totalSpent.toFixed(2)}
+                    LKR {customer.totalSpent.toFixed(2)}
                   </TableCell>
                   <TableCell className="text-right">
                     <Button
@@ -91,7 +91,7 @@ export default function AdminCustomers() {
             <div className="text-center">
               <p className="text-sm text-muted-foreground">Total Revenue</p>
               <p className="text-3xl font-bold font-heading text-primary mt-2">
-                ${customers.reduce((sum, c) => sum + c.totalSpent, 0).toFixed(2)}
+                LKR {customers.reduce((sum, c) => sum + c.totalSpent, 0).toFixed(2)}
               </p>
             </div>
           </CardContent>

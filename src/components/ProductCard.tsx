@@ -70,7 +70,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
       <CardFooter className="p-4 pt-0 flex items-center justify-between gap-3">
         <div className="flex-1">
           <p className="text-2xl font-heading font-bold text-primary">
-            ${product.price.toFixed(2)}
+            LKR{product.price.toFixed(2)}
           </p>
         </div>
         <Button

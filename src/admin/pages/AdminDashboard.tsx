@@ -18,7 +18,7 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatCard
           title="Total Sales"
-          value={`$${mockStats.totalSales.toLocaleString()}`}
+          value={`LKR ${mockStats.totalSales.toLocaleString()}`}
           icon={DollarSign}
           trend="+12.5% from last month"
         />
@@ -67,7 +67,7 @@ export default function AdminDashboard() {
                   dataKey="sales" 
                   stroke="hsl(var(--primary))" 
                   strokeWidth={3}
-                  name="Sales ($)"
+                  name="Sales (LKR)"
                 />
               </LineChart>
             </ResponsiveContainer>
